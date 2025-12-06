@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-image: url('images/pattern-squiggly-line-top.svg'), url('images/pattern-circle.svg'), url('images/pattern-squiggly-line-bottom-desktop.svg'),
+    url('images/pattern-lines.svg'), url('images/background-desktop.png');
+    background-size: 30%, 10%, 50%,cover, cover;
+    background-position: top right, calc(50% + 150px) calc(50% + 100px), bottom left , center, center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    font-family: 'Inconsolata', sans-serif;
+    
+}
+header{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+.coding-conf-logo{
+    width: 20%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.header-texts h1{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.header-texts p{
+    padding-bottom: 30px;
+    font-weight: 400;
+}
+form{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+input{
+    border-radius: 10px;
+    padding:13px 200px  13px 10px;
+    border: 0.5px solid rgb(97, 97, 97,  0.4);
+    color: rgb(255, 255, 255);
+    background-color: hsl(245, 19%, 35%, 0.4);
+    margin-top: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+input:hover{
+  background: hsl(245, 19%, 35%, .7) ;
+  border: 1px dashed solid  hsl(245, 19%, 35%, .9) ;
+}
+input:focus{
+  background: hsl(245, 19%, 35%, ) ;
+  border: 1px dashed solid  hsl(245, 19%, 35%, .9) ;
+}
+input::placeholder{
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    font-family:'Inconsolata', sans-serif; 
+}
+#lowerlabel{
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.bottom-label{
+    display: inline-flex;
+    gap: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.upload-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+
+ 
+}
+.upload-icon{
+    background-color: hsl(245, 19%, 35%, 0.4);
+    padding: 5px ;
+    border-radius: 8px;
+    border: 0.5px solid rgb(97, 97, 97,  0.4);
+}
+.upload-wrapper p{
+    font-size: 10px;
+}
+
+#image-upload {
+  display: none;
+
+}
+.upload-box {
+  border: 1.5px dashed hsl(245, 19%, 35%, 0.4);
+  border-radius: 10px;
+  background: hsl(245, 19%, 35%, .4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+   padding:20px 86px  20px 86px;
+}
+.upload-box:hover {
+  background: hsl(245, 19%, 35%, .7) ;
+  border: 1px dashed solid  hsl(245, 19%, 35%, .9) ;
+}
+
+
+.img-cont{
+    background-color: hsl(245, 19%, 35%, 0.4);
+    width: 15%;
+    padding: 5px 2px  5px 2px ;
+    border-radius: 10px;
+    justify-content: center;
+    justify-items: center;
+
+}
+#upload-img{
+    width: 75%;
+    align-items: center;
+}
+label{
+    font-weight: medium;
+    color:  rgb(255, 255, 255);
+    font-size: 13px;
+}
+
+button{
+    background: linear-gradient(to right, hsl(7, 88%, 67%), hsl(7, 71%, 60%)); 
+    border-radius: 10px;
+    color: hsl(248, 70%, 10%);
+    border: 0px;
+    padding: 13px 132px;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 13px;
+    font-weight: 800;
+    font-family: 'Inconsolata', sans-serif;
+    text-decoration: none;
+    margin-top: -100px;
+    transition: 0.3s;
+}
+
+.name-field, .email-field, .GitHub-field, .upload-field{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: left;
+    justify-content: left;
+    margin-top: -15px;
+}
+.gradient-text{
+    background: linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Generated-tickets-section{
+    display: none;
+}
+.Generated-tickets-texts{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+}
+.Generated-tickets-texts h1{
+    font-size: 45px;
+    padding-bottom: 20px;
+    width: 40%;
+}
+.Generated-tickets-texts p{
+    padding-bottom: 30px;
+    font-weight: 400;
+    width: 20%;
+    line-height: 1.2;
+}
+.Generated-ticket{
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.ticketimg{
+    width: 30%;
+}
+.ticket-info{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    transform: translateX(-80px) translateY(-200px);
+}
+
+.Confe-name{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Confe-name p{
+    transform: translateX(20px);
+    font-size: 14px;
+}
+#Conf-name-logo{
+    width: 100%;
+}
+.participant-info{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+
+.ticket-number{
+    transform: translateX(270px) translateY(-75px) rotate(90deg);
+    font-size: 24px;
+    display: flex;
+    align-items: flex-end;
+    color:hsla(244, 100%, 91%, 0.4);
+}
+.participant-mail-cont{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.participant-mail{
+    display: flex;
+    align-items: center;
+
+}
+#participant-img{
+    width: 60px ;
+    border-radius: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+
+body{
+        overflow-y: scroll;
+        overflow-x: hidden;
+        margin: 0%;
+        padding: 0px 20px;
+    }
+  * {
+        box-sizing: border-box;
+
+    }
+    .header-texts h1{
+    font-size: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    width: fit-content;
+    }
+
+    br{
+        display: none;
+    }
+    input{
+   
+    padding:18px 164px  18px 10px;
+    margin-top: 8px;
+   
+    }
+    .name-field, .email-field, .GitHub-field, .upload-field{
+    margin-top: 14px;
+}
+    input::placeholder{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    font-family:'Inconsolata', sans-serif; 
+}
+label{
+    font-weight: medium;
+    color:  rgb(255, 255, 255);
+    font-size: 17px;
+}
+button{
+    
+    padding: 18px 100px;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: 'Inconsolata', sans-serif;
+    text-decoration: none;
+    margin-top: 30px;
+}
+.coding-conf-logo{
+   width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+    
+}
+.upload-wrapper {
+  margin-bottom: 20px;
+}
+.header-texts p{
+    padding-bottom: 30px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+}

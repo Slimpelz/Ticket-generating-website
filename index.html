@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Conference ticket generator</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="coding-conf-logo">
+      <img src="/images/logo-full.svg" alt="coding-conf">
+    </div>
+    <div class="header-texts">
+      <h1>Your Journey to Coding Conf <br> 2025 Starts Here!</h1>
+      <p>Secure your spot at next year's biggest coding conference.</p>
+    </div>
+  </header>
+
+  <!-- Form starts -->
+  <form action="">
+   
+
+    <div class="upload-wrapper">
+      <label class="top-label">Upload Avatar</label>
+
+      <label for="image-upload" class="upload-box">
+        <i class="upload-icon"><img src="images/icon-upload.svg" alt=""></i>
+        <span class="upload-text">Drag and drop or click to upload</span>
+      </label>
+
+      <input type="file" id="image-upload" accept="image/*">
+      <div class="bottom-label">
+        <img src="images/icon-info.svg" alt="">
+        <p class="bottom-label">Upload your photo (JPG or PNG, max size: 500KB).</p>
+      </div>
+      
+    </div>
+      
+    
+    <div class="name-field">
+      <label for="Name">Full Name</label>
+      <input type="text" size="" placeholder="example@email.com"><br><br>
+    </div>
+    
+    <div class="email-field">
+      <label for="Email">Email Address</label>
+      <input type="email" size="" placeholder="example@email.com" ><br><br>
+    </div>
+   
+    <div class="GitHub-field">
+      <label for="GitHub-Username">GitHub Username</label>
+      <input type="text" size="" placeholder=" @yourusername" ><br><br>
+    </div>
+    
+
+    <button>Generate My Ticket</button>
+  </form>
+  <!-- Form ends -->
+
+
+  <!-- Generated tickets starts -->
+
+  <div class="Generated-tickets-section">
+     <div class="Generated-tickets-texts">
+      <h1>Congrats, <span class="gradient-text">Jonathan Kristof!</span> Your ticket is ready.</h1>
+      <p>We've emailed your ticket to <span style="color: hsl(7, 71%, 60%);">jonathanemail@gmail.com</span> and will send updates in the run up to the event.</p>
+    </div>
+
+    <div class="Generated-ticket">
+      <img src="images/pattern-ticket.svg" alt="" class="ticketimg">
+      <div class="ticket-info">
+        <div class="Confe-name">
+          <img src="images/logo-full.svg" alt="" id="Conf-name-logo">
+          <p>Jan 31, 2025 / Austin, TX</p>
+        </div>
+        <div class="participant-info">
+          <img src="images/image-avatar.jpg" alt="" id="participant-img">
+          <div class="participant-mail-cont">
+            <span>Jonathan Kristof</span>
+            <div class="participant-mail">
+              <img src="images/icon-github.svg" alt="" >
+              <p>@jonathankristof0101</p>
+            </div>
+          </div>
+        </div>
+        <div class="ticket-number">
+          <p>#01609</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  
+ 
+  
+</body>
+</html>
